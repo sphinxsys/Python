@@ -1,4 +1,8 @@
+import re, argparse
+import sys
+from matplotlib import pyplot
 import plistlib
+import numpy as np
 
 def findDuplicates(fileName):
     ''' Find the duplicate track in the specific file
@@ -108,4 +112,4 @@ def findCommonTracks(fileNames):
 
 # findDuplicates('mymusic.xml')
 
-findCommonTracks(['maya.xml', 'mymusic.xml'])
+findCommonTracks(['.\\test-data\maya.xml', '.\\test-data\\mymusic.xml'])
